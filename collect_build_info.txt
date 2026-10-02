@@ -1,0 +1,41 @@
+Build information collector 2026/10/02
+===========================
+
+Windows
+-------
+
+1. Move to the target project directory.
+
+cd C:\Projects\VesselEditor
+
+2. Run:
+
+& "$HOME\Developer\tools\collect_build_info_windows.bat"
+
+Output:
+The Markdown file is created in the target project directory.
+
+
+macOS
+-----
+
+1. Move to the target project directory.
+
+cd ~/VesselEditor
+
+2. Run:
+
+~/Developer/tools/collect_build_info_macos.sh
+
+Output:
+The Markdown file is created in the target project directory.
+
+
+Notes
+-----
+
+- The current directory is treated as the project root.
+- The scripts only collect information.
+- They do not modify the project, Git repository, Python environment,
+  or Conda environment.
+- An optional output directory can be specified as the first argument.
